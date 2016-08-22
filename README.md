@@ -19,3 +19,5 @@ polymer serve
 http://localhost:8080
 ```
 ### For further information about me, pleas click down below.
+[CV(eng)](https://github.com/greenfox-velox/Homework4EUedge/Liptak_Daniel_cv.pdf)
+[CV(hun)](https://github.com/danielliptak/Homework4EUedge/Liptak_Daniel_oneletrajz.pdf)
