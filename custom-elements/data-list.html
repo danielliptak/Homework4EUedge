@@ -7,6 +7,7 @@
 <link rel="import" href="../bower_components/paper-toggle-button/paper-toggle-button.html">
 <link rel="import" href="../bower_components/iron-autogrow-textarea/iron-autogrow-textarea.html">
 <link rel="import" href="./add-popup.html">
+<link rel="import" href="./get-graph.html">
 
 <dom-module id="data-list">
 
@@ -22,6 +23,7 @@
     </iron-ajax>
 
     <add-popup id="add-popup" new-data="{{newData}}"></add-popup>
+    <get-graph current-list = "[[currentList]]"></get-graph>
     <table>
       <tr>
         <th>Name (Job Title)</th>
@@ -37,7 +39,9 @@
               display: block;
             }
 
-            table, #dataDump {
+            table,
+            #dataDump,
+            h3 {
                 display: block;
                 font-family: arial, sans-serif;
                 border-collapse: collapse;
@@ -67,6 +71,7 @@
 
         </template>
     </table>
+    <h3>Data Dump</h3>
     <iron-autogrow-textarea disabled id='dataDump'></iron-autogrow-textarea>
   </template>
 
