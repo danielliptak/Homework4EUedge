@@ -1,5 +1,5 @@
 {
-  "name": "Homework4EUedge",
+  "name": "homework4euedge",
   "authors": [
     "Daniel Liptak <daniliptak@gmail.com>"
   ],
@@ -13,7 +13,8 @@
     "iron-a11y-announcer": "PolymerElements/iron-a11y-announcer#^1.0.5",
     "neon-animation": "PolymerElements/neon-animation#^1.2.4",
     "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.2.0",
-    "paper-dialog": "PolymerElements/paper-dialog#^1.1.0"
+    "paper-dialog": "PolymerElements/paper-dialog#^1.1.0",
+    "iron-autogrow-textarea": "PolymerElements/iron-autogrow-textarea#^1.0.13"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
