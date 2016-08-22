@@ -11,7 +11,8 @@
     "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
     "paper-input": "PolymerElements/paper-input#^1.1.16",
     "iron-a11y-announcer": "PolymerElements/iron-a11y-announcer#^1.0.5",
-    "neon-animation": "PolymerElements/neon-animation#^1.2.4"
+    "neon-animation": "PolymerElements/neon-animation#^1.2.4",
+    "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.2.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
