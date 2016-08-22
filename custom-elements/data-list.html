@@ -62,7 +62,7 @@
             <td>{{item.age}}</td>
             <td>{{item.nick}}</td>
             <td><paper-toggle-button checked={{item.employee}} on-tap="_updateDumb"></paper-toggle-button></td>
-            <td><paper-icon-button icon="delete" class="deleteIcon"></paper-icon-button></td>
+            <td><paper-icon-button icon="delete" class="deleteIcon" on-tap="_delete"></paper-icon-button></td>
           </tr>
 
         </template>
@@ -81,12 +81,38 @@
           type: Array,
           reflectToAttribute: true,
         },
+        newData: {
+          type: Object,
+          notify: true,
+          reflectToAttribute: true
+        },
+      },
+      listeners: {
+        'new-data-changed':'_refreshList'
       },
 
      _response: function() {
        this.$.ajax.lastResponse = this.currentList
      },
 
+     _delete: function(e) {
+       this.splice('currentList', e.model.index, 1);
+       this._updateDumb(e)
+     },
+
+     _refreshList: function() {
+       this.push('currentList', this.newData)
+       this._updateDumb(this.newData)
+     },
+
+     _updateDumb: function(e) {
+       if (e.model) {
+         this.$.dataDump.value = JSON.stringify(e.model.item)
+       } else {
+         this.$.dataDump.value = JSON.stringify(e)
+       }
+     },
+     
     });
   </script>
 </dom-module>
