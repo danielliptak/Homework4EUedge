@@ -18,6 +18,10 @@ polymer serve
 ```
 http://localhost:8080
 ```
+- OR Check it Online
+```
+[http://danielliptak.github.io/Homework4EUedge/](http://danielliptak.github.io/Homework4EUedge/)
+```
 ### For further information about me, pleas click down below.
 [CV(eng)](https://github.com/danielliptak/Homework4EUedge/blob/master/Liptak_Daniel_cv.pdf)
 [CV(hun)](https://github.com/danielliptak/Homework4EUedge/blob/master/Liptak_Daniel_oneletrajz.pdf)
