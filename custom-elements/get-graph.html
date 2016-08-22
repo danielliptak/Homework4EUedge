@@ -27,7 +27,6 @@
         background-color: var(--paper-blue-500);
         color: white;
       }
-  
 
     </style>
 
@@ -64,7 +63,6 @@
         var fiftyToSixty = 0
         var moreThanSixty = 0
         for (var i = 0; i < this.currentList.length; i++) {
-          console.log(data[i].age);
           if (data[i].age < 10) {
             zeroToTen += 1
           } else if (data[i].age < 20) {
@@ -93,7 +91,8 @@
 
       _refreshGraph: function () {
         this.$.googleChart.data = this._countAges(this.currentList)
-      }
+      },
+
     })
   </script>
 

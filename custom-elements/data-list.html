@@ -85,16 +85,11 @@
         currentList: {
           notify: true,
           type: Array,
-          reflectToAttribute: true,
         },
-        newData: {
-          type: Object,
-          notify: true,
-          reflectToAttribute: true
-        },
+
       },
       listeners: {
-        'new-data-changed':'_refreshList'
+        'add-popup.new-data-changed':'_refreshList'
       },
 
      _response: function() {
@@ -108,6 +103,7 @@
 
      _refreshList: function() {
        this.push('currentList', this.newData)
+       console.log(this.newData)
        this._updateDumb(this.newData)
      },
 

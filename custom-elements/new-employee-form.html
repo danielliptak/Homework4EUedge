@@ -88,18 +88,19 @@
         formValues: {
           type: Object,
           notify: true,
-          value: {
-          },
+          value: {},
         },
         newData: {
           type: Object,
           notify: true,
-        }
+          value: {
+          },
+        },
       },
 
-      _addNewRecord: function(e) {
-        e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.currentList.push(this.formValues);
-        this.newData = this.formValues;
+      _addNewRecord: function() {
+         this.newData = this.formValues;
+         this.formValues = {};
       },
 
       clearInput: function(e) {
